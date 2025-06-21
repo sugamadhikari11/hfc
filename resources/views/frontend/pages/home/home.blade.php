@@ -1,0 +1,10 @@
+@extends('frontend.app.main')
+@section('content')
+   @include("frontend.pages.home.home-banner")
+   @include("frontend.pages.home.home-about")
+   @include("frontend.pages.home.home-service")
+   @include("frontend.pages.home.home-project")
+   @include("frontend.pages.home.home-gallery")
+   @include("frontend.pages.home.home-blog")
+   @include("frontend.pages.home.home-testimonial")
+@endsection

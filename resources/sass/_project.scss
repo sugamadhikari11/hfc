@@ -1,0 +1,40 @@
+/* General Page Section Styles (Shared) */
+.page-section {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.page-section header {
+  background-color: #0b2b52;
+  color: white;
+  padding: 40px 0;
+}
+
+.page-section h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Responsive Header Padding */
+@media (min-width: 992px) {
+  .section-header h1 {
+    padding-left: 16rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-header h1 {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+/* Shared Container Width */
+.page-section .container {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 0;
+}

@@ -1,0 +1,36 @@
+/vendor
+.env
+/node_modules
+.DS_Store
+# Ignore build artifacts
+/dist
+# Ignore logs
+/logs
+# Ignore coverage reports
+/coverage
+# Ignore temporary files
+/tmp
+# Ignore IDE specific files
+/.idea
+# Ignore system files
+/.vscode
+# Ignore OS generated files
+/.DS_Store
+# Ignore test output
+/test-output
+# Ignore configuration files
+/config.json
+# Ignore documentation files
+/docs
+# Ignore local environment files
+/.env.local
+# Ignore build directories
+/build
+# Ignore cache directories
+/cache
+# Ignore package lock files
+/package-lock.json
+# Ignore yarn lock files
+/yarn.lock
+# Ignore npm debug log files
+/npm-debug.log

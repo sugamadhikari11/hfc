@@ -1,0 +1,33 @@
+.hero-banner {
+  position: relative;
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1608759265468-21c39b479c4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center center/cover no-repeat;
+}
+
+.hero-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-banner .container {
+  z-index: 2;
+}
+
+.services ul li {
+  margin-bottom: 10px;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.services ul li::before {
+  content: "✓";
+  color: #0d6efd;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
