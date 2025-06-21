@@ -33,18 +33,13 @@ $blogData = \App\Models\Blog\Blog::limit(3)->get();
                             </div>
                         </div>
                         <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="fas fa-user me-1"></i>
-                                    <a href="#">{{$blog->user->name}}</a>
-                                </span>
-                            </div>
                             <h4 class="blog-title">
                                 <a href="{{route('blogs',$blog->slug)}}">{{$blog->title}}</a>
                             </h4>
                             <p>
                                 {!! $blog->summary !!}
                             </p>
-                            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            <a href="{{route('blogs',$blog->slug)}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +47,7 @@ $blogData = \App\Models\Blog\Blog::limit(3)->get();
 
         </div>
         <div class="text-center mt-4">
-            <a href="#" class="btn btn-primary">View All Posts</a>
+            <a href="{{ route('blogs') }}" class="btn btn-primary">View All Posts</a>
         </div>
     </div>
 </section>

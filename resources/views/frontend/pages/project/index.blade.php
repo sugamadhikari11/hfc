@@ -25,7 +25,6 @@
                                     $files = json_decode($project->files_field, true);
                                     $imagePath = $files['image'] ?? null;
                                 @endphp
-
                                 @if ($imagePath)
                                     <img src="{{ asset('storage/' . $imagePath) }}" class="img-fluid w-100" alt="{{ $project->title }}" 
                                          style="height: 250px; object-fit: cover;">

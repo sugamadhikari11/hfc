@@ -5,7 +5,7 @@
     <div class="row align-items-center">
       <div class="col-md-6">
         <h1 class="display-4 text-white fw-bold">Justice for All</h1>
-        <a href="#" class="btn btn-danger mt-3">Donate</a>
+        <a href="{{route('donate')}}" class="btn btn-primary mt-3">Donate</a>
       </div>
     </div>
   </div>

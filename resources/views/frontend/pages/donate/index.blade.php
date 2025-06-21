@@ -38,7 +38,7 @@
                             <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Human Rights Education</li>
                             <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Community Outreach Programs</li>
                         </ul>
-                        <a href="#" class="btn btn-warning btn-lg mt-3">Donate Now</a>
+                        <a href="#" class="btn btn-primary btn-lg mt-3">Donate Now</a>
                     </div>
                 </div>
             </div>

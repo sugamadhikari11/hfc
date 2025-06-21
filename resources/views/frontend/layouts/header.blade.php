@@ -52,18 +52,35 @@
             <!-- Nav links -->
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('about-us') }}">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('projects') }}">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('blogs') }}">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}" href="{{ route('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('about-us') ? 'active' : '' }}" href="{{ route('about-us') }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('projects') ? 'active' : '' }}" href="{{ route('projects') }}">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('blogs') ? 'active' : '' }}" href="{{ route('blogs') }}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                    </li>
+
+
                 </ul>
 
                 <!-- Donate Button -->
                 <div class="ms-3 d-flex align-items-center">
-                    <a href="{{ route('donate') }}" class="btn btn-warning fw-semibold px-4 py-2 rounded-pill">
+                    <a href="{{ route('donate') }}" class="btn btn-primary fw-semibold px-4 py-2 rounded-pill">
                         <i class="bi bi-heart-fill me-1"></i> Donate
                     </a>
                 </div>
